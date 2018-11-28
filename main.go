@@ -19,7 +19,7 @@ import (
 	"text/template"
 
 	"github.com/microcosm-cc/bluemonday"
-	"github.com/russross/blackfriday"
+	"gopkg.in/russross/blackfriday.v1"
 	"github.com/shurcooL/highlight_diff"
 	"github.com/shurcooL/highlight_go"
 	"github.com/shurcooL/octicon"
