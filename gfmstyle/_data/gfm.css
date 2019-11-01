@@ -13,7 +13,15 @@
 
 code,pre{tab-size:4}
 
-tt,code,pre{font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;font-size:12px}
+tt,code,pre{
+	font-family: Consolas, Menlo, 'Fira Code',
+				'Fantasque Sans Mono', 'Eco Coding for Powerline', 'Eco Coding', 'Envy Code R',
+				'CosmicSansNeueMono', Monaco, 'Andale Mono', 'Ubuntu Mono',
+				Courier, 'Courier New',
+				monospace;
+
+	font-size:12px
+}
 pre{margin-top:0;margin-bottom:0}
 
 blockquote{margin:0}
