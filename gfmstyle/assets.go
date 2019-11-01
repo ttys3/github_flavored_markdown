@@ -1,20 +1,14 @@
-// +build dev
-
+// Package gfmstyle contains CSS styles for rendering GitHub Flavored Markdown.
 package gfmstyle
 
 import (
-	"go/build"
-	"log"
 	"net/http"
+
+	rice "github.com/GeertJohan/go.rice"
 )
 
-func importPathToDir(importPath string) string {
-	p, err := build.Import(importPath, "", build.FindOnly)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	return p.Dir
+func AssetsHandler() http.Handler {
+	box := rice.MustFindBox("./_data")
+	handler := http.FileServer(box.HTTPBox())
+	return handler
 }
-
-// Assets contains the gfm.css style file for rendering GitHub Flavored Markdown.
-var Assets = http.Dir(importPathToDir("github.com/shurcooL/github_flavored_markdown/gfmstyle/_data"))
