@@ -1,4 +1,4 @@
-module github.com/442hz/github_flavored_markdown
+module github.com/shurcooL/github_flavored_markdown
 
 require (
 	github.com/GeertJohan/go.rice v1.0.0
@@ -7,7 +7,6 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/russross/blackfriday v1.5.2
 	github.com/sergi/go-diff v1.0.0 // indirect
-	github.com/shurcooL/github_flavored_markdown v0.0.0-20181002035957-2122de532470
 	github.com/shurcooL/go v0.0.0-20181114040627-58262d155ee0 // indirect
 	github.com/shurcooL/go-goon v0.0.0-20170922171312-37c2f522c041 // indirect
 	github.com/shurcooL/highlight_diff v0.0.0-20170515013008-09bb4053de1b
